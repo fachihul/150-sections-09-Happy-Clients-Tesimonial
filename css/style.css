@@ -1,0 +1,140 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-padding {
+  padding: 80px 0;
+}
+.section-borders span {
+  width: 50px;
+  height: 5px;
+  background: #6aaf08;
+  display: inline-block;
+  border-radius: 2px;
+}
+.section-borders span.black-border {
+  background: #000;
+  width: 30px;
+  margin: 0 5px;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header h2 {
+  font-size: 2.5rem;
+}
+.testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.testimonial-carousel .owl-dots button {
+  height: 5px;
+  background: #6aaf08;
+  width: 20px;
+  display: inline-block;
+  margin: 0 5px;
+  transition: 0.2s;
+  border-radius: 2px;
+}
+.testimonial-carousel .owl-dots button.active {
+  width: 30px;
+  background: #000;
+}
+.testimonial-carousel .owl-dots button span {
+  display: none !important;
+}
+.single-testimonial-item {
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 0 10px #6aaf08;
+  margin: 2px;
+  padding: 20px;
+  font-style: italic;
+  position: relative;
+  padding-left: 86px;
+}
+.single-testimonial-item::before {
+  font-family: fontAwesome;
+  content: "\f10e"; /* Unicode for the quote icon */
+  position: absolute;
+  color: #6aaf08;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.single-testimonial-item::after {
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background: #eff0f0;
+  content: "";
+  top: 15%;
+  left: 60px;
+}
+.single-testimonial-item h3 {
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.single-testimonial-item h3 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
+}
